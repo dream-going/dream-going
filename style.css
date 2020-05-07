@@ -35,7 +35,7 @@ body.demos .service-widget {
 }
 
 body.demos .container-fluid {
-    max-width: 1080px
+    max-width: 1080px;
 }
 
 a {
@@ -225,15 +225,47 @@ ul, li, ol{
 	text-transform: uppercase;
 }
 .heading p{
-	font-size: 18px;
+	font-size: 20px;
 	padding: 20px 0px;
 }
 .heading h3{
 	color: ffffff;
 }
+
 /*-------------------------------------------------
     xclip
 --------------------------------------------------*/
+
+.cd-headline.clip span {
+  display: inline-block;
+  padding: .2em 0;
+  color: #ffffff;
+  font-size: 30px;
+}
+.cd-headline.clip span b{
+	text-transform: uppercase;
+}
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #aebcb9;
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
+
 .cd-words-wrapper {
   display: inline-block;
   position: relative;
@@ -259,4 +291,48 @@ ul, li, ol{
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #333333;
+}
+
+/*-------------------------------------------------
+    About
+--------------------------------------------------*/
+
+.about-area{
+  background-color:#f9f9f9;
+}
+.about-padding{
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.row{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.single-well>a {
+  display: block;
+}
+
+.single-well ul li {
+  color: #444;
+  display: block;
+  padding: 5px 0;
+}
+
+.single-well ul li i {
+  color: #3EC1D5;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.single-well p {
+  color: #444;
+}
+.sec-head {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
 }

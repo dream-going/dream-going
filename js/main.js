@@ -13,7 +13,13 @@
         /* eslint-disable no-console */
         /*eslint no-undef: "error"*/
         /*eslint-env node*/
-
+        
+    $(window).on('load', function() {
+      var pre_loader = $('#preloader');
+      pre_loader.fadeOut('slow', function() {
+      $(this).remove();
+      });
+    });
   var s = $("#sticker");
   var pos = s.position();
   $(window).on('scroll', function() {

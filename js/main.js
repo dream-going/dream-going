@@ -4,15 +4,18 @@
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-freelancer/blob/master/LICENSE)
     */
 
+/* eslint-disable */
+/*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */ /*global define */
 
 
     (function($) {
     "use strict"; // Start of use strict
         
-        /*jslint devel: true */
-        /* eslint-disable no-console */
-        /*eslint no-undef: "error"*/
-        /*eslint-env node*/
+     $(function(){
+    $('body').scrollspy({ target: '#navbarResponsive' })
+     })
+
+        
         
     $(window).on('load', function() {
       var pre_loader = $('#preloader');
@@ -30,6 +33,14 @@
       s.removeClass("stick");
     }
   });
+        var page_scroll = $('a.page-scroll');
+        page_scroll.on('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 55
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+      });
         
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {

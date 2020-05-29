@@ -260,7 +260,7 @@ div#preloader {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url('uploads/preloader.gif') no-repeat center center;
+  background: #fff url('uploads/preloader.jpg') no-repeat center center;
 }
 .header-area.stick {
   background-color: rgba(0, 0, 0, 1);

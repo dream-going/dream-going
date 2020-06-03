@@ -951,7 +951,7 @@ margin-bottom: 30px;
 .sus-btn {
     background: #fff none repeat scroll 0 0;
     border: 2px solid #fff;
-    color: #3EC1D5;
+    color: #333;
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
@@ -969,4 +969,9 @@ margin-bottom: 30px;
     margin: 0;
     text-transform: uppercase;
     letter-spacing: 2px;
+}
+.sus-btn:hover {
+  background: #333 none repeat scroll 0 0;
+  border: 2px solid #fff;
+  color: #fff;
 }

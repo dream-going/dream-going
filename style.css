@@ -384,7 +384,7 @@ div#preloader {
   height: auto;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.40);
+  background: rgba(0, 0, 0, 0.80);
   z-index: 9;
 }
 
@@ -779,19 +779,18 @@ table {
   transition: all 0.4s ease 0s;
 }
 /*-------------------------------------------------
-    Service Area
+    Service Area & SKills
 --------------------------------------------------*/
-
-.section-headline.services-head>h2 {
-    margin-bottom: 25px;
-}
 .section-headline h2 {
   display: inline-block;
   font-size: 40px;
   font-weight: 600;
-  margin-bottom: 70px;
+  margin-bottom: 70px!important;
   position: relative;
   text-transform: capitalize;
+}
+.section-headline.services-head>h2 {
+    margin-bottom: 25px;
 }
 .section-headline h2::after {
   border: 1px solid #333;
@@ -834,10 +833,114 @@ table {
   color: #3EC1D5;
 }
 /*-------------------------------------------------
-    Skills
+    Portfolio Area Css
 --------------------------------------------------*/
 
+.pr-1 {
+    padding-right: 1rem!important;
+}
+.pl-1 {
+    padding-left: 1rem!important;
+}
+.skill-area {
+    background: rgba(248, 248, 248, 0.8) url(uploads/background/bg1.jpg) no-repeat fixed center top / cover;
+}
+.skill-area{
+    position: relative;
+}
+.test-overly {
+    background: rgba(0, 0, 0, 0.80);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-area {
+    padding-top: 0px;
+}
+.single-awesome-project{
+ overflow: hidden;
+margin-bottom: 30px;
+}
+.awesome-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.awesome-img>a {
+  display: block;
+  position: relative;
+}
+.single-awesome-project:hover .awesome-img>a::after {
+  opacity: 1;
+}
 
-.Skills-area {
-    
+.single-awesome-project:hover .add-actions {
+  opacity: 1;
+  bottom: 0;
+}
+.awesome-img>a::after {
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.add-actions {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    bottom: 30px;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 10px 15px;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+.project-dec {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.project-dec a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.project-dec h4 {
+  margin-bottom: 5px;
+}
+
+.project-dec h4:hover {
+  color: #fff;
+}
+
+.project-dec h4 {
+  color: #ddd;
+  font-size: 24px;
+  margin-top: -45px;
+  padding-top: 50%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.project-dec span {
+  color: #ddd;
+  font-size: 13px;
+}
+/*-------------------------------------------------
+    Suscrive Area
+--------------------------------------------------*/
+.suscribe-area {
+    background: #444 none repeat scroll 0 0;
+    opacity: 0.8;
+    padding: 30px 0;
 }
